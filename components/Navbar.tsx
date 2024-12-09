@@ -24,7 +24,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="mt-10">
+    <nav className="mt-2">
       <div className="mx-auto  px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
