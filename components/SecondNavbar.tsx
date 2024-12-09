@@ -21,11 +21,11 @@ const SecondNavbar = () => {
   const [activeCategory, setActiveCategory] = useState("ART DE LA TABLE")
 
   return (
-    <nav className="relative mt-5" aria-label="Secondary Navigation">
+    <nav className="relative mt-5">
       <div className="px-4 sm:px-6 lg:px-8 w-full mx-auto">
         <div className="relative flex items-center justify-center">
           <div className="flex overflow-x-auto scrollbar-hide">
-            <ul className="flex space-x-6 py-4 px-4">
+            <ul className="flex space-x-6 py-4 px-4 ">
               {categories.map((category) => (
                 <li key={category}>
                   <button
