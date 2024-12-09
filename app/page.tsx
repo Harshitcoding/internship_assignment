@@ -16,9 +16,7 @@ export default function Home() {
     <Hero/>
     <Description/>
     <Article/>
-   <div className="ml-2 mr-2">
    <SecondColumn/>
-   </div>
    <Packageing/>
    <SubscribeSection/>
    <Footer/>
