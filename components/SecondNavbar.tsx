@@ -49,7 +49,7 @@ const SecondNavbar = () => {
   }
 
   return (
-    <nav className="relative border-b bg-white" aria-label="Secondary Navigation">
+    <nav className="relative mt-5" aria-label="Secondary Navigation">
       <div className=" px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between">
           <Button
