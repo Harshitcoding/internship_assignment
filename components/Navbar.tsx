@@ -16,7 +16,7 @@ export default function Navbar() {
   }
 
   const handleInputBlur = () => {
-   setShowInputMaterial(false)
+    setTimeout(() => setShowInputMaterial(false), 100)
   }
 
   const toggleMobileMenu = () => {
@@ -24,8 +24,8 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="mt-4">
-      <div className=" px-4 sm:px-6 lg:px-8">
+    <nav className="border-b bg-white ">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="w-32">
@@ -87,11 +87,14 @@ export default function Navbar() {
             <button
               onClick={toggleMobileMenu}
               className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-menu"
             >
+              <span className="sr-only">Open main menu</span>
               {mobileMenuOpen ? (
-                <X className="block h-6 w-6" />
+                <X className="block h-6 w-6" aria-hidden="true" />
               ) : (
-                <Menu className="block h-6 w-6"  />
+                <Menu className="block h-6 w-6" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -100,7 +103,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden" >
+        <div className="md:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <div className="mb-4">
               <input

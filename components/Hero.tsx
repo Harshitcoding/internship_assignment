@@ -5,7 +5,6 @@ import { Button } from "./ui/button"
 const Hero = () => {
   return (
     <div className="mt-6 mx-4 sm:mx-8 md:mx-16 text-sm">
-      {/* Breadcrumb */}
       <div className="text-xs sm:text-sm">
         Home&nbsp;&nbsp;<span className="text-slate-300">•</span>&nbsp;&nbsp;
         <span className="text-slate-400">Art de la table</span>

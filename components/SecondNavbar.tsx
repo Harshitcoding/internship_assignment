@@ -21,7 +21,7 @@ const SecondNavbar = () => {
   const [activeCategory, setActiveCategory] = useState("ART DE LA TABLE")
 
   return (
-    <nav className="relative mt-5" aria-label="Secondary Navigation">
+    <nav className="relative mt-5 " aria-label="Secondary Navigation">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between">
           <div
