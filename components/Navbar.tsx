@@ -16,7 +16,7 @@ export default function Navbar() {
   }
 
   const handleInputBlur = () => {
-    setTimeout(() => setShowInputMaterial(false), 100)
+    setShowInputMaterial(false)
   }
 
   const toggleMobileMenu = () => {
